@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MagpieSorter</string>
+    <string name="welcome">Start collecting</string>
+    <string name="welcome2">Manage my collections</string>
 </resources>
