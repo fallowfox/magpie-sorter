@@ -2,4 +2,8 @@
     <string name="app_name">MagpieSorter</string>
     <string name="welcome">Start collecting</string>
     <string name="welcome2">Manage my collections</string>
+
+    <string name="screen_home">Home</string>
+    <string name="screen_createcol">Create Collection</string>
+    <string name="screen_collections">Collections</string>
 </resources>
