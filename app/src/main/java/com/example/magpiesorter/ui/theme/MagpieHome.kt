@@ -9,10 +9,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.magpiesorter.R
+import com.example.magpiesorter.MagpieScreen
 
-@Preview(showBackground = true)
 @Composable
-fun MagpieHome(modifier: Modifier = Modifier){
+fun MagpieHome(onCollectionsClicked: () -> Unit = {},modifier: Modifier = Modifier){
     Column(modifier = modifier, horizontalAlignment = Alignment.CenterHorizontally){
         Button(
             onClick = {}
@@ -20,7 +20,7 @@ fun MagpieHome(modifier: Modifier = Modifier){
             Text(text= stringResource(R.string.welcome))
         }
         Button(
-            onClick = {}
+            onClick = onCollectionsClicked
         ){
             Text(text= stringResource(R.string.welcome2))
         }

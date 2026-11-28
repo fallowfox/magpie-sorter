@@ -88,10 +88,19 @@ fun displayList(collectionList: List<Collection>){
 @Preview
 @Composable
 fun CollectionCardPreview() {
-    val testCollections = listOf(
-        Collection(name = "Coins", id = 1),
-        Collection(name = "Medals", id = 2),
-        Collection(name = "Stamps", id = 3)
-    )
+
     displayList(collectionList = testCollections)
+}
+
+val testCollections = listOf(
+    Collection(name = "Coins", id = 1),
+    Collection(name = "Medals", id = 2),
+    Collection(name = "Stamps", id = 3)
+)
+@Composable
+fun Collections(
+    collectionList: List<Collection> = testCollections,
+    modifier: Modifier = Modifier
+) {
+    displayList(collectionList = collectionList)
 }
